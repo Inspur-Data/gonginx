@@ -18,6 +18,7 @@ addition_types
 aio
 aio_write
 ajp_temp_path
+ajp_pass
 alias
 allow
 ancient_browser
