@@ -8,6 +8,7 @@ import (
 var validDirectivesRawList = `absolute_redirect
 accept_mutex
 accept_mutex_delay
+access_by_lua_block
 access_log
 add_after_body
 add_before_body
@@ -16,6 +17,7 @@ add_trailer
 addition_types
 aio
 aio_write
+ajp_temp_path
 alias
 allow
 ancient_browser
@@ -24,6 +26,8 @@ api
 auth_basic
 auth_basic_user_file
 auth_delay
+auth_digest
+auth_digest_user_file
 auth_http
 auth_http_header
 auth_http_pass_client_cert
@@ -43,7 +47,13 @@ autoindex
 autoindex_exact_size
 autoindex_format
 autoindex_localtime
+balancer_by_lua_block
+body_filter_by_lua_block
 break
+brotli
+brotli_comp_level
+brotli_min_length
+brotli_types
 charset
 charset_map
 charset_types
@@ -58,6 +68,7 @@ client_header_timeout
 client_max_body_size
 connect_timeout
 connection_pool_size
+content_by_lua_block
 create_full_put_path
 daemon
 dav_access
@@ -131,6 +142,7 @@ fastcgi_temp_file_write_size
 fastcgi_temp_path
 flv
 geo
+geoip2
 geoip_city
 geoip_country
 geoip_org
@@ -180,6 +192,7 @@ gzip_vary
 hash
 health_check
 health_check_timeout
+header_filter_by_lua_block
 hls
 hls_buffers
 hls_forward_args
@@ -219,6 +232,8 @@ imap_capabilities
 imap_client_buffer
 include
 index
+init_by_lua_block
+init_worker_by_lua_block
 internal
 internal_redirect
 ip_hash
@@ -275,16 +290,18 @@ listen
 load_module
 location
 lock_file
-log_format
+log_by_lua_block
 log_format
 log_not_found
 log_subrequest
+lua_add_variable
+lua_package_path
+lua_shared_dict
 mail
 map
 map_hash_bucket_size
 map_hash_max_size
 master_process
-match
 match
 max_errors
 max_ranges
@@ -306,6 +323,11 @@ mirror
 mirror_request_body
 modern_browser
 modern_browser_value
+modsecurity
+modsecurity_rules
+modsecurity_rules_file
+more_clear_headers
+more_set_headers
 mp4
 mp4_buffer_size
 mp4_limit_rate
@@ -326,7 +348,8 @@ open_file_cache_errors
 open_file_cache_min_uses
 open_file_cache_valid
 open_log_file_cache
-open_log_file_cache
+opentracing
+opentracing_propagate_context
 otel_exporter
 otel_service_name
 otel_span_attr
@@ -346,11 +369,11 @@ pop3_capabilities
 port_in_redirect
 postpone_output
 preread_buffer_size
+preread_by_lua_block
 preread_timeout
 protocol
 proxy_bind
 proxy_buffer
-proxy_buffer_size
 proxy_buffer_size
 proxy_buffering
 proxy_buffers
@@ -430,7 +453,6 @@ proxy_store_access
 proxy_temp_file_write_size
 proxy_temp_path
 proxy_timeout
-proxy_timeout
 proxy_upload_rate
 queue
 quic_active_connection_id_limit
@@ -452,8 +474,8 @@ reset_timedout_connection
 resolver
 resolver_timeout
 return
-return
 rewrite
+rewrite_by_lua_block
 rewrite_log
 root
 satisfy
@@ -519,6 +541,8 @@ session_log
 session_log_format
 session_log_zone
 set
+set_by_lua_block
+set_escape_uri
 set_real_ip_from
 slice
 smtp_auth
@@ -537,6 +561,7 @@ ssl
 ssl_alpn
 ssl_buffer_size
 ssl_certificate
+ssl_certificate_by_lua_block
 ssl_certificate_key
 ssl_ciphers
 ssl_client_certificate
@@ -559,8 +584,6 @@ ssl_reject_handshake
 ssl_server_name
 ssl_session_cache
 ssl_session_ticket_key
-ssl_session_ticket_key
-ssl_session_ticket_key
 ssl_session_tickets
 ssl_session_timeout
 ssl_stapling
@@ -575,7 +598,6 @@ starttls
 state
 status
 status_format
-status_zone
 status_zone
 sticky
 sticky_cookie_insert
@@ -674,8 +696,6 @@ uwsgi_temp_file_write_size
 uwsgi_temp_path
 valid_referers
 variables_hash_bucket_size
-variables_hash_bucket_size
-variables_hash_max_size
 variables_hash_max_size
 worker_aio_requests
 worker_connections
@@ -693,7 +713,6 @@ xslt_param
 xslt_string_param
 xslt_stylesheet
 xslt_types
-zone
 zone
 zone_sync
 zone_sync_buffers
