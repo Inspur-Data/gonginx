@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tufanbarisyildirim/gonginx/config"
+	"github.com/Inspur-Data/gonginx/config"
 )
 
 func TestUpstream_ToString(t *testing.T) {

@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/tufanbarisyildirim/gonginx/config"
-	"github.com/tufanbarisyildirim/gonginx/dumper"
-	"github.com/tufanbarisyildirim/gonginx/parser"
+	"github.com/Inspur-Data/gonginx/config"
+	"github.com/Inspur-Data/gonginx/dumper"
+	"github.com/Inspur-Data/gonginx/parser"
 )
 
 func main() {

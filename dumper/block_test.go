@@ -3,7 +3,7 @@ package dumper
 import (
 	"testing"
 
-	"github.com/tufanbarisyildirim/gonginx/config"
+	"github.com/Inspur-Data/gonginx/config"
 )
 
 func NewServerOrNill(directive config.IDirective) *config.Server {

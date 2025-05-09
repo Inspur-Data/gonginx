@@ -4,9 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tufanbarisyildirim/gonginx/config"
-	"github.com/tufanbarisyildirim/gonginx/dumper"
-	"github.com/tufanbarisyildirim/gonginx/parser/token"
+	"github.com/Inspur-Data/gonginx/config"
+	"github.com/Inspur-Data/gonginx/dumper"
+	"github.com/Inspur-Data/gonginx/parser/token"
 	"gotest.tools/v3/assert"
 )
 

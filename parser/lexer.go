@@ -6,7 +6,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/tufanbarisyildirim/gonginx/parser/token"
+	"github.com/Inspur-Data/gonginx/parser/token"
 )
 
 // lexer is the main tokenizer

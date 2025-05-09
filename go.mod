@@ -1,4 +1,4 @@
-module github.com/tufanbarisyildirim/gonginx
+module github.com/Inspur-Data/gonginx
 
 go 1.22
 

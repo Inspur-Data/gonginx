@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/tufanbarisyildirim/gonginx/config"
+	"github.com/Inspur-Data/gonginx/config"
 	"gotest.tools/v3/assert"
 )
 

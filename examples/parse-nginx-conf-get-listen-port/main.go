@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/tufanbarisyildirim/gonginx/parser"
+	"github.com/Inspur-Data/gonginx/parser"
 )
 
 func parseConfigAndGetPorts(filePath string) ([]string, error) {

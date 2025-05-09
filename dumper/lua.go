@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/imega/luaformatter/formatter"
-	"github.com/tufanbarisyildirim/gonginx/config"
+	"github.com/Inspur-Data/gonginx/config"
 )
 
 // DumpLuaBlock convert a lua block to a string
